@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
         rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" />
-        <script src="index.pack.js" defer></script>
+        <script src="index.js" defer></script>
     </head>
     <body>
         <main>
@@ -16,7 +16,7 @@
 
             <!-- Generate passwords -->
             <div class="gen-wrap">
-                <div class="generate-wrap">
+                <div class="generate-wrap" onclick="populate()">
                     <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.30064 0.0462736C8.71692 0.177494 9 0.563541 9 1.00001V6.00001L13 6.00001C13.3729 6.00001 13.7148 6.20747 13.887 6.5382C14.0592 6.86893 14.0331 7.268 13.8192 7.57347L6.81924 17.5735C6.56894 17.931 6.11564 18.085 5.69936 17.9537C5.28309 17.8225 5 17.4365 5 17L5 12H1C0.627127 12 0.285222 11.7926 0.113024 11.4618C-0.0591735 11.1311 -0.0330591 10.732 0.180771 10.4265L7.18077 0.426549C7.43107 0.0689788 7.88436 -0.0849466 8.30064 0.0462736Z" fill="white"/>
                     </svg>                    
@@ -25,7 +25,7 @@
                 
                 <form name="myform" oninput="range1value.value = range1.valueAsNumber">
                     <p class="passLength">Password length:</p>
-                    <output name="range1value" for="range1" >12</output>
+                    <output class="output" name="range1value" for="range1" >12</output>
                     <input class="slider" name="range1" type="range" min="8" max="16" step="1" defaultValue="12" value="12"></input>  
                 </form>
             </div> <!-- / gen-wrap -->
@@ -35,23 +35,23 @@
             <div class="passwords-container">
                 
                 <div class="pw1"> 
-                    <span class="material-icons-outlined">content_copy</span>                       
+                    <span class="material-icons-outlined">content_copy</span>                                            
                     <button class="pwBtn1" onclick="x">...</button>
                 </div>
 
                 <div class="pw2">
                     <span class="material-icons-outlined">content_copy</span>
-                    <button class="pwBtn1" onclick="x">...</button>
+                    <button class="pwBtn2" onclick="x">...</button>
                 </div>
 
                 <div class="pw3">
                     <span class="material-icons-outlined">content_copy</span>
-                    <button class="pwBtn1" onclick="x">...</button>
+                    <button class="pwBtn3" onclick="x">...</button>
                 </div>
 
                 <div class="pw4">
                     <span class="material-icons-outlined">content_copy</span>
-                    <button class="pwBtn1" onclick="x">...</button>
+                    <button class="pwBtn4" onclick="x">...</button>
                 </div>
 
             </div> <!-- / passwords-container -->
